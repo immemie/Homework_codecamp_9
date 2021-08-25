@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad07236b83.js" crossorigin="anonymous"></script>
+    <title>Friends</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: whitesmoke;
+        }
+        .container {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            background-color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: inherit;
+            padding: 15px 0;
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0 , 0 , 0, 0.24);
+        }
+        .navbar a {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar a>i {
+            margin: 0 8px;
+        }
+        .navbar a:hover span {
+            border-bottom: 1px solid #fff;
+        }
+        .main-icon {
+            font-size: 36px;
+        }
+        .friend-list {
+            margin-top: 66px;
+            padding: 20px 0;
+        }
+        .friend-list > div {
+            display: flex;
+            padding: 15px 30px;
+        }
+        .friend-list > div:hover {
+            background-color: #efefef;
+        }
+        .display {
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        .content {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin: 10px 30px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 8px;
+        }
+        .icon-container {
+            display: flex;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            margin: 10px;
+            border-radius: 18px;
+            background-color: #333;
+        }
+        .icon:hover {
+            background: #555;
+        }
+        i {
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">
+                <i class="fas fa-angle-left"></i>
+                <span>Index</span> 
+            </a>
+            <i class="fas fa-users main-icon"></i>
+            <a href="profile.html">
+                <span>Profile</span>
+                <i class="fas fa-angle-right"></i>
+            </a>
+        </div>
+        <div class="friend-list">
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/121/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Nuttee Phetcharabooranin</p>
+                        <p>097-159xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/122/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Naruporn Reaungsai</p>
+                        <p>087-678xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/123/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Wisarut benjapitakkul</p>
+                        <p>091-835xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/124/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Jirawat Panketkorn</p>
+                        <p>099-770xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/125/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Kornkawin Bijayayothin</p>
+                        <p>083-033xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/126/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Waranchai Wetchsuwan</p>
+                        <p>087-565xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/127/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Treepetch Rodsaeng</p>
+                        <p>090-012xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/128/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Kinnapot promsutthiphan</p>
+                        <p>062-695xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/129/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Ratchapon lovitayanon</p>
+                        <p>081-936xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img class="display" src="https://picsum.photos/id/130/100/100" alt=""></a>
+                <div class="content">
+                    <div class="profile">
+                        <a href="#"><h4>Nickname</h4></a>
+                        <p>Rachata Burin</p>
+                        <p>083-685xxxx</p>
+                    </div>
+                    <div class="icon-container">
+                        <div class="icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

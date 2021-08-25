@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS 8-4</title>
+</head>
+<body>
+    <script>
+        function extractCurrencyValue(string, rate) {
+            return +string.replaceAll(/[^0-9]/g, "")  * rate
+        }
+
+        console.log( extractCurrencyValue('$120', 30.5));
+        
+        /* 
+        can used regular expression to extract only the number
+        +string.replaceAll(/\D/g, "")
+        +string.replaceAll(/[^0-9]/g, "") 
+        */
+    </script>
+</body>
+</html>

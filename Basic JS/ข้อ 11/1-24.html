@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* ข้อ 1 
+        function draw(n) {
+            let star = ''
+            for(let column = 0; column < n; column++) {
+                star = star + '*';
+            }
+        console.log(star);
+        }*/
+
+        /* ข้อ 2
+        function draw(n) {
+            let star = ''
+            for(let column = 0; column < n; column++) {
+                star = star + '*';
+            }
+            for(let row = 0; row < n; row++) {
+                console.log(star);
+            }
+        }*/
+
+        /* ข้อ 3
+        function draw(n) {
+            let num = ''
+            for(let column = 1; column <= n; column++) {
+                num = num + column;
+            }
+            for(let row = 0; row < n; row++) {
+                console.log(num);
+            }
+        }*/
+
+        /*ข้อ 4
+        function draw(n) {           
+            for (let row=1; row<=n; row++) {
+                let num = ''
+                for (let col=1; col<=n; col++) {
+                    num = num + row
+                }  
+                console.log(num)
+            }
+        }*/
+
+        /*ข้อ 5 
+        function draw(n) {           
+            for (let row=n; row>=1; row--) { 
+                let num = ''
+                for (let col=1; col<=n; col++) {
+                    num = num + row
+                }  
+                console.log(num)
+            }
+        }*/
+
+        /*ข้อ 6
+        function draw(n) {
+            let count = 1;
+            for (let row=1; row<=n; row++) { 
+                let num = ''
+                
+                for (let col=1; col<=n; col++) {
+                    num = num + count;
+                    count++
+                }
+                console.log(num);
+            }
+        }*/
+
+        /* ข้อ 7 
+        function draw(n) {
+            let count = n ** 2;
+            for (let row = 1; row <= n; row++) { 
+                let num = ''
+                
+                for (let col=1; col<=n; col++) {
+                    num = num + count;
+                    count--
+                }
+                console.log(num);
+            }
+        }*/
+
+        /* ข้อ 8 
+        function draw(n) {
+            for (let row = 0; row < n; row++) {
+                console.log(row * 2);
+            }
+        }*/
+
+        /* ข้อ 9 
+        function draw(n) {
+            for (let row=1; row <= n; row++) {
+                console.log(row * 2);
+            }
+        }*/
+
+        /*ข้อ 10
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let num = '';
+
+                for (let col = 1; col <= n; col++) {
+                    num = num + `${row * col}`;
+                }
+                console.log(num);
+            }
+        }*/
+
+        /*ข้อ 11
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for(let col = 1; col <= n; col++) {
+                    if (col === row) {
+                        print = print + '_';
+                    }
+                    else {
+                        print = print + '*';
+                    }
+                }
+                console.log(print);
+            }
+        }*/
+
+        /*ข้อ 12
+        function draw(n) {
+            for (let row = n; row >= 1; row--) {
+                let print = '';
+
+                for(let col = 1; col <= n; col++) {
+                    if (col === row) {
+                        print = print + '_';
+                    }
+                    else {
+                        print = print + '*';
+                    }
+                }
+                console.log(print);
+            }
+        }*/ 
+
+        /*ข้อ 13
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for (let col = 1; col <= n; col++) {
+                    if (col <= row) {
+                        print = print + '*';
+                    }
+                    else {
+                        print = print + '_';
+                    }
+                }
+                console.log(print)
+            }
+        }*/
+
+        /* ข้อ 14
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for (let col = n; col >= 1; col--) {
+                    if (col >= row) {
+                        print = print + '*';
+                    }
+                    else {
+                        print = print + '_';
+                    }
+                }
+                console.log(print)
+            }
+        }*/
+
+        /*ข้อ 15
+        function draw(n) {
+            for (let row = 1; row <= (n * 2) - 1; row++) {
+                let print = '';
+
+                if (row <= n) {
+                    for (let col = 1; col <= n; col++) {
+                        if (col <= row) {
+                            print = print + '*';
+                        }
+                        else {
+                            print = print + '_';
+                        }
+                    }
+                    console.log(print)
+                } 
+                else {
+                    for (let col = (n * 2) - 1; col >= n; col--) {
+                        if (col >= row) {
+                            print = print + '*';
+                        }
+                        else {
+                            print = print + '_';
+                        }
+                    }
+                    console.log(print)
+                }
+            }
+        }*/
+
+        /*ข้อ 17
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for (let col = n; col >= 1; col--) {
+                    if (col <= row) {
+                        print = print + '*';
+                    }
+                    else {
+                        print = print + '_';
+                    }
+                }
+                console.log(print);
+            }
+        }*/
+
+        /*ข้อ 18
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for (let col = 1; col <= n; col++) {
+                    if (col >= row) {
+                        print = print + '*';
+                    }
+                    else {
+                        print = print + '_';
+                    }
+                }
+                console.log(print);
+            }
+        }*/
+
+        /*ข้อ 19
+        function draw(n) {
+            for (let row = 1; row <= (n * 2) - 1; row++) {
+                let print = '';
+
+                if (row <= n) {
+                    for (let col = n ; col >= 1; col--) {
+                        if (col <= row) {
+                            print = print + '*';
+                        }
+                        else {
+                            print = print + '_';
+                        }
+                    }
+                    console.log(print);
+                }
+                else {
+                    for (let col = n; col <= (n * 2) - 1; col++) {
+                        if (col >= row) {
+                            print = print + '*';
+                        }
+                        else {
+                            print = print + '_';
+                        }
+                    }
+                    console.log(print);
+                }
+            }
+        }*/    
+
+        /*ข้อ 20
+        function draw(n) {
+            let count = 1;
+            for (let row = 1; row <= (n * 2) -1 ; row++) {
+                let print = '';
+
+                if (row <= n) {
+                    for (let col = n; col >= 1; col--) {
+                        if (col <= row) {
+                            print = print + count;
+                            count++
+                        }
+                        else {
+                            print = print + '-';
+                        }
+                    }
+                    console.log(print)
+                }
+                else {
+                    for (let col = n; col <= (n * 2) - 1; col++) {
+                        if (col >= row) {
+                            print = print + count;
+                            count++
+                        }
+                        else {
+                            print = print + '-';
+                        }
+                    }
+                    console.log(print);
+                }
+            }
+        }*/
+
+        /*ข้อ 21*/
+        /*
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for (let col = 1; col <= 2; col++) {
+                    if (col === 1) {
+                        //first 4 col
+                        for (let leftCol = n; leftCol >= 1; leftCol--) {
+                            (leftCol <= row) ? print += '*' : print += '_';
+                        }
+                    }
+                    else {
+                        //last 3 col
+                        for (let rightCol = 1; rightCol < n; rightCol++) {
+                            (rightCol < row) ? print += '*': print += '_';
+                        }
+                    }
+                }
+                console.log(print);
+            }
+        }
+        */
+
+        /*ข้อ 22
+        function draw(n) {
+            for (let row = 1; row <= n; row++) {
+                let print = '';
+
+                for (let col = 1; col <= 2; col++) {
+                    if (col === 1) {
+                        //first 4 col
+                        for (let leftCol = 1; leftCol <= n; leftCol++) {
+                            (leftCol >= row) ? print += '*': print += '_';
+                        }
+                    }
+                    else {
+                        //last 3 col
+                        for (let rightCol = n; rightCol > 1; rightCol--) {
+                            (rightCol > row) ? print += '*': print += '_';
+                        }
+                    }
+                }
+                console.log(print);
+            }
+        }*/
+
+        /*ข้อ 23
+        function draw(n) {
+            for (let row = 1; row <= (n * 2) - 1; row++) {
+                let print = '';
+                
+                //row 1-4
+                if (row <= n) {
+                    for (let col = 1; col <= 2; col++) {
+                        if (col === 1) {
+                            //first 4 col
+                            for (let leftCol = n; leftCol >= 1; leftCol--) {
+                                (leftCol <= row) ? print += '*': print += '_';
+                            }
+                        }
+                        else {
+                            //last 3 col
+                            for (let rightCol = 1; rightCol < n; rightCol++) {
+                                (rightCol < row) ? print += '*': print += '_';
+                            }
+                        }
+                    }
+                    console.log(print);
+                }
+                //row 5-7 > เริ่มที่ n จบที่ (n * 2) - 1
+                else {
+                    for (let col = 1; col <= 2; col++) {
+                        if (col === 1) {
+                            //first 4 col
+                            for (let leftCol = n; leftCol <= (n * 2) - 1; leftCol++) {
+                                (leftCol >= row) ? print += '*' : print += '_';
+                            }
+                        }
+                        else {
+                            //last 3 col
+                            for (let rightCol = (n * 2) - 1; rightCol > n; rightCol--) {
+                                (rightCol > row) ? print += '*' : print += '_';
+                            }
+                        }
+                    }
+                    console.log(print);
+                }
+            }
+        }*/
+
+        /*ข้อ 24*/
+        function draw(n) {
+            let count = 1;
+            for (let row = 1; row <= (n * 2) - 1; row++) {
+                let print = '';
+                
+                //row 1-4
+                if (row <= n) {
+                    for (let col = 1; col <= 2; col++) {
+                        if (col === 1) {
+                            //first 4 col
+                            for (let leftCol = n; leftCol >= 1; leftCol--) {
+                                if (leftCol <= row) { 
+                                    print += count;
+                                    count++
+                                } else {
+                                    print += '-';
+                                }
+                            }
+                        }
+                        else {
+                            //last 3 col
+                            for (let rightCol = 1; rightCol < n; rightCol++) {
+                                if (rightCol < row) {
+                                    print += count;
+                                    count++
+                                } else {
+                                    print += '-';
+                                }
+                            }
+                        }
+                    }
+                    console.log(print);
+                }
+                //row 5-7 > เริ่มที่ n จบที่ (n * 2) - 1
+                else {
+                    for (let col = 1; col <= 2; col++) {
+                        if (col === 1) {
+                            //first 4 col
+                            for (let leftCol = n; leftCol <= (n * 2) - 1; leftCol++) {
+                                if (leftCol >= row) {
+                                    print += count;
+                                    count++
+                                }
+                                else {
+                                    print += '-';
+                                }
+                            }
+                        }
+                        else {
+                            //last 3 col
+                            for (let rightCol = (n * 2) - 1; rightCol > n; rightCol--) {
+                                if (rightCol > row) {
+                                    print += count;
+                                    count++;
+                                }
+                                else {
+                                    print += '-';
+                                }
+                            }
+                        }
+                    }
+                    console.log(print);
+                }
+            }
+        }
+
+        console.log(draw(4))
+    </script>
+</body>
+</html>

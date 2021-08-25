@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delay & Direction Lab</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        .animatebox {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            position: relative;
+            animation-name: makechange;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+        }
+        @keyframes makechange {
+            0% {top: 0; left: 0; background-color: dodgerblue;}
+            25% {top: 0; left: 85%; background-color: deepskyblue;}
+            50% {top: 75vh; left: 85%; background-color: lightseagreen;}
+            75% {top: 75vh; left: 0; background-color: teal;}
+            100% {top: 0; left: 0; background-color: dodgerblue;}
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Delay & Direction</h2>
+    <div class="animatebox"></div>
+</body>
+</html>

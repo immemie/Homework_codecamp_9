@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://kit.fontawesome.com/ad07236b83.js" crossorigin="anonymous"></script>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            display: flex;
+            background-color: whitesmoke;
+        }
+        .div-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100vh;
+            width: 30vw;
+        }
+        a {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #333;
+        }
+        a span {
+            display: none;
+        }
+        i, span {
+            font-size: 20px;
+            color: #fff;
+            margin: 0 10px;
+        }
+        .menu {
+            width: 60px;
+            padding: 15px 10px;
+            margin: 20px 0;
+            background-color: #333;
+            text-align: center;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            overflow: hidden;
+            transition: width 1s;
+
+        }
+        .menu:first-child:hover {
+            width: 135px;
+        }
+        .menu:last-child:hover {
+            width: 150px;
+        }
+        .menu:hover span {
+            display: inline-block;
+        }
+        .div-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(./Pic/photo-1608376156820-56656bddfd10.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 70vw;
+        }
+        .div-2 div {
+            color: #333;
+            text-align: center;
+            width: 50%;
+            height: fit-content;
+            padding: 4px 8px;
+            background-color: rgba(255, 255, 255,0.5);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-2">
+        <div>
+            <h1>Life is too short to eat food that doesn't taste good.</h1>
+        </div>
+    </div>
+    <div class="div-1">
+        <div class="menu">
+            <a href="profile.html">
+                <span>Profile</span>
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="friends.html">
+                <span>Friends</span>
+                <i class="fas fa-users"></i>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>

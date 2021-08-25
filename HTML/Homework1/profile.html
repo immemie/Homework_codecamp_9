@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://kit.fontawesome.com/ad07236b83.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: whitesmoke;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            background-color: #fff;
+        }
+        header {
+            background: url(./Pic/photo-1628079251261-624e723b7326.jpg);
+            overflow: hidden;
+            height: 200px;
+        }
+        main {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            margin: 30px 20px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 15px;
+            position: sticky;
+            top: 30px;
+            z-index: 1;
+        }
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        .myProfile {
+            padding: 15px 0;
+            margin: 8px 0 12px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        a {
+            width: max-content;
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+        a:hover {
+            background-color: #555;
+        }
+        span {
+            margin-left: 10px;
+        }
+        section {
+            width: 100%;
+            padding: 30px 40px 0 20px;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: normal;
+            border-bottom: 1px solid #333;
+            text-transform: uppercase;
+        }
+        .content {
+            padding: 30px 0;
+        }
+        .content img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        .content img:hover {
+            opacity: 1;
+        }
+        .sub-content {
+            position: relative;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .sub-content:nth-child(3) img {
+            object-position: top;
+        }
+        .sub-content:nth-child(4) img {
+            object-position: bottom;
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 4px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div></div>
+        </header>
+        <main>
+            <aside>
+                <div class="sidebar">
+                    <img src="https://picsum.photos/id/79/200" alt="me">
+                    <div class="myProfile">
+                        <p>Thunchanok Thongon</p>
+                        <p>Memie</p>
+                        <p>Bangkok</p>
+                    </div>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i>
+                        <span>Index</span> 
+                    </a>
+                    <a href="friends.html">
+                        <i class="fas fa-users"></i>
+                        <span>Friends</span>
+                    </a>
+                </div>
+            </aside>
+            <section>
+                
+                <div class="hobby">
+                    <h1>Hobby</h1>
+                    <div class="content">
+                        <div class="sub-content">
+                            <img src="./Pic/photo-1610466025839-ec6040c347b6.jpg" alt="">
+                            <div class="text"><i>Books</i></div>
+                        </div>
+                        <div class="sub-content">
+                            <img src="./Pic/5e13d4b0-252f-11ea-8dc7-a3695cca2904.jpg" alt="">
+                            <div class="text"><i>Movies</i></div>
+                        </div>
+                        <div class="sub-content">
+                            <img src="./Pic/E9PDPhoXsAQCsaB.jpg" alt="">
+                            <div class="text"><i>Games</i></div>
+                        </div>
+                        <div class="sub-content">
+                            <img src="./Pic/evolve.jpg" alt="">
+                            <div class="text"><i>Musics</i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Lab</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        img {
+            width: 80vw;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .content {
+            display: inline-block;
+            flex: 1 1 25vw;
+            margin: 2vw;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        h2, h3, p {
+            text-align: center;
+        }
+
+        @media (max-width: 560px) {
+            .content {
+                flex: 1 1 300px;
+            }
+            p {
+                font-size: 1.25em;
+            }
+        }
+        
+        @media (min-width: 561px) and (max-width: 840px) {
+            .content {
+                flex: 1 1 40vw
+            }
+        }
+
+        /* @media (min-width: 841px) {
+            
+        } */
+    </style>
+</head>
+<body>
+    <h2>Media Query</h2>
+    <div>
+        <img src="https://picsum.photos/id/171/1000/400" alt="pic">
+    </div>
+    <div class="container">
+        <div class="content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officia nam incidunt tempora reprehenderit temporibus totam veritatis vel laborum nulla. Architecto debitis aut iure ut, nihil molestias veniam sint voluptatem.</p>
+        </div>
+        <div class="content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officia nam incidunt tempora reprehenderit temporibus totam veritatis vel laborum nulla. Architecto debitis aut iure ut, nihil molestias veniam sint voluptatem.</p>
+        </div>
+        <div class="content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officia nam incidunt tempora reprehenderit temporibus totam veritatis vel laborum nulla. Architecto debitis aut iure ut, nihil molestias veniam sint voluptatem.</p>
+        </div>
+        <div class="content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officia nam incidunt tempora reprehenderit temporibus totam veritatis vel laborum nulla. Architecto debitis aut iure ut, nihil molestias veniam sint voluptatem.</p>
+        </div>
+        <div class="content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officia nam incidunt tempora reprehenderit temporibus totam veritatis vel laborum nulla. Architecto debitis aut iure ut, nihil molestias veniam sint voluptatem.</p>
+        </div>
+        <div class="content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo officia nam incidunt tempora reprehenderit temporibus totam veritatis vel laborum nulla. Architecto debitis aut iure ut, nihil molestias veniam sint voluptatem.</p>
+        </div>
+    </div>
+</body>
+</html>

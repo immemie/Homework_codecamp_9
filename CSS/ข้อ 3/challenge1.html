@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Chalenge 1</title>
+    <script src="https://kit.fontawesome.com/ad07236b83.js" crossorigin="anonymous"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .container {
+            width: 500px;
+            border: 2px solid dimgrey;
+            border-radius: 3px;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        .content {
+            background-color: white;
+            margin: 8px;
+            padding: 20px
+        }
+        form > *, .content > * {
+            margin-bottom: 7px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        
+        input[type="text"], select, p {
+            width: 160px;
+            height: 25px;
+        }
+        #url {width: 100px;}
+        p {
+            display: inline-block;
+        }
+        h4 {
+            color: dimgrey;
+            background-color: #f0f0f0;
+            padding: 6px 0 6px 3px;
+            border-top: 2px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="profile">
+                <form action="#">
+                    <label for="name">Name *:</label>
+                    <input type="text" id="name" name="name">
+                    <i class="fas fa-question-circle"></i>
+                    <br>
+
+                    <label for="tabText">Tab Text *:</label>
+                    <input type="text" id="tabText" name="tabText">
+                    <i class="fas fa-question-circle"></i>
+                    <br>
+
+                    <label for="url">URL *:</label>
+                    http://wwww.wizehive.com/webform/ <input type="text" id="url" name="URL" >
+                </form>
+            </div>
+            <h4>FORM SETUP</h4>
+            <div class="formInput">
+                <form action="#">
+                    <label for="sform">Form:</label>
+                    <select name="selectForm" id="sform"></select>
+                    <button>Edit</button>
+                    <br>
+
+                    <label for="logo">Logo:</label>
+                    <p>no logo uploaded</p>
+                    <button>Upload Logo</button>
+                    <br>
+
+                    <label for="temtext">Template Text:</label>
+                    <select name="templateText" id="temtext">
+                        <option value="english">English</option>
+                    </select>
+                    <button>Edit</button>
+                    <br>
+
+                    <label for="rvform">Review Form:</label>
+                    <select name="reviewForm" id="rvform">
+                        <option value="default">Default</option>
+                    </select>
+                    <br>
+
+                    <label for="rvscore">Review Score:</label>
+                    <select name="reviewScore" id="rvscore">
+                        <option value="rating">Rating</option>
+                    </select>
+                    <button>Reload Fields</button>
+                    <br>
+
+                    <label for="sctype">Scoring Type:</label>
+                    <select name="scoringType" id="sctype">
+                        <option value="average">Average</option>
+                    </select>
+                    <br>
+
+                    <label for="maxscore">Max Score:</label>
+                    <input type="text" id="maxscore" name="maxscore" placeholder="4.00">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

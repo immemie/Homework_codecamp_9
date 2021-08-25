@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Lab</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        .animatebox {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            color: floralwhite;
+            margin: auto;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            visibility: visible;
+            /* animation: fromto 5s 2; */
+            animation: percent 10s 4;
+        }
+
+        @keyframes fromto {
+            from {top: 0px; background-color: crimson; color: floralwhite; width: 100px;}
+            to {top: 250px; background-color: lightpink; color: crimson; width: 300px;}
+        }
+
+        @keyframes percent {
+            0% {top: 0px; left: -40%; visibility: visible; background-color: crimson;}
+            20% {top: 0px; left: 40%; visibility: visible; background-color: crimson;}
+            50% {top: 75vh; left: 40%; visibility: hidden; background-color: crimson;}
+            80% {top: 75vh; left: -40%; visibility: visible; border: 1px solid crimson; background-color: floralwhite; color: crimson;}
+            100% {top: 0px; left: -40%; visibility: visible; border: 1px solid floralwhite; background-color: crimson;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Keyframes</h2>
+    <div class="animatebox">Look at me</div>
+</body>
+</html>

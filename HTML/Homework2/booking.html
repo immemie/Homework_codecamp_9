@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework 2</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        form {
+            width: 300px;
+            /* border: 1px solid black; */
+            padding-left: 10px;
+        }
+        .top > *, .bottom > * {
+            display: inline-block;
+        }
+        .top > *{
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .bottom > * {
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+        .top input[type=date], 
+        .top select {
+            box-sizing: border-box;
+            width: 120px;
+            padding: 2px;
+        }
+        .bottom input[type=number], 
+        .bottom select {
+            box-sizing: border-box;
+            width: 4em;
+        }
+        input[type=submit] {
+            padding: 7px;
+            width: 80px;
+            background-color: coral;
+            border-radius: 2px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div class="top">
+            <div>
+                <label for="from">Flying From</label>
+                <br>
+                <select name="from" id="from">
+                    <option value="bangkok_th">Bangkok, Thailand</option>
+                    <option value="chiangmai_th">Chiangmai, Thailand</option>
+                </select>
+            </div>
+            <div>
+                <label for="to">To</label>
+                <br>
+                <select name="to" id="to">
+                    <option value="tokyo_jpn">Tokyo, Japan</option>
+                    <option value="osaka_jpn">Osaka, Japan</option>
+                    <option value="seoul_skr">Seoul, South Korea</option>
+                    <option value="taipei_tw">Taipei, Taiwan</option>
+                </select>
+            </div>
+            <div>
+                <label for="departing">Departing</label>
+                <br>
+                <input type="date" name="departing" id="departing">
+            </div>
+            <div>
+                <label for="returning">Returning</label>
+                <br>
+                <input type="date" name="returning" id="returning">
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <label for="adult">Adult</label>
+                <br>
+                <input type="number" name="adult" id="adult">
+            </div>
+            <div>
+                <label for="child">Child</label>
+                <br>
+                <input type="number" name="child" id="child">
+            </div>
+            <div>
+                <label for="infant">Infant</label>
+                <br>
+                <input type="number" name="infant" id="infant">
+            </div>
+            <div>
+                <label for="currency" style="color: coral;">Currency</label>
+                <br>
+                <select name="currency" id="currency">
+                    <option value="thb">THB</option>
+                    <option value="jpy">JPY</option>
+                    <option value="krw">KRW</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <input type="submit" value="SEARCH">
+    </form>
+</body>
+</html>

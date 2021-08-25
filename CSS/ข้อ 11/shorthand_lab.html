@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Shorthand</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        .animatebox {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            position: relative;
+            visibility: visible;
+            animation: makechange 10s 2s infinite alternate ease-in;
+        }
+        @keyframes makechange {
+            0% {top: 0; left: 0; background-color: dodgerblue;}
+            25% {top: 0; left: 85%; background-color: deepskyblue;  opacity: 1;} 
+            50% {top: 75vh; left: 85%; background-color: lightseagreen; opacity: 0;}
+            75% {top: 75vh; left: 0; background-color: teal; opacity: 1;}
+            100% {top: 0; left: 0; background-color: dodgerblue;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Animation Shorthand</h2>
+    <div class="animatebox"></div>
+</body>
+</html>

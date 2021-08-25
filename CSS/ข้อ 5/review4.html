@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Review 4</title>
+    <style>
+        body {
+            height: 200vw;
+        }
+        .container {
+            height: 500px;
+            background-color: cornsilk;
+        }
+        div div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        .static {
+            position: static;
+            background-color: #ff000088;
+        }
+        .relative {
+            position: relative;
+            top: 40px; left: 40px;
+            background-color: #00800088;
+        }
+        .absolute {
+            position: absolute;
+            top: 40px; left: 40px;
+            background-color: #0000ff88;
+        }
+        .fixed {
+            position: fixed;
+            top: 40px; left: 40px;
+            background-color: #ffff0088;
+        }
+        .sticky {
+            position: sticky;
+            top: 20px;
+            background-color: #80008088;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Position</h2>
+        <div class="static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">Fixed</div>
+        <div class="sticky">Sticky</div>
+    </div>
+</body>
+</html>
